@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Home() {
   const datawed = [
     {
@@ -281,7 +283,97 @@ export default function Home() {
             </div>
           </div>
         </div>
+
+        <div className="subcribe mb-3">
+          <div className="subscribe-inner px-[422px] pt-[91px] pb-[137px] flex items-center flex-col gap-10">
+            <div className="subcribe-top flex items-center flex-col w-[516px]">
+              <p className="subscribe-sub-title font-medium text-[20px] leading-[30px] text-[#20B15A] mb-[22px]">
+                SUBSCRIBE
+              </p>
+              <h2 className="subscribe-title font-semibold text-[35px] text-center  leading-[45px] mb-[5px]">
+                Subscribe To Get The Latest News About Us
+              </h2>
+              <p className="subcribe-desc font-medium text-sm leading-[21.86px] text-[#8B8B8B]">
+                Please drop your email below to get daily update about what we
+                do
+              </p>
+            </div>
+            <div className="enterInput w-full relative max-w-lg mx-auto">
+              <input
+                className="relative py-4 px-4 rounded-lg border border-black placeholder:text-sm placeholder:leading-[21.86px] placeholder:font-normal bg-transparent w-full"
+                type="email"
+                placeholder="Enter Your Email Address"
+              />
+              <button className="outline-none absolute top-1 right-1 btn-subcribe flex items-center justify-center px-6 py-3 text-sm md:text-base rounded-lg bg-[#F55F1D] text-white">
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </div>
       </main>
+      <div className="footer bg-[#00CA72]">
+        <div className="footer-inner pt-[57px] px-[116px] pb-[29px]">
+          <div className="row-link">
+            <div className="col">
+              <h2 className="footer-title font-bold text-[39.2px] leading-[58.8px] p-[19.6px]">
+                WEB LOGO
+              </h2>
+              <p className="footer-desc font-normal text-[20px] leading-[27.32px]">
+                Some footer text about the Agency. Just a little description to
+                help people understand you better
+              </p>
+              <div className=" footer-icon-list-contact flex items-center justify-start gap-[15.31px] mt-5">
+                <div className="footer-icon-items w-[40.82px] h-[40.82px] bg-[#20B15A] flex items-center justify-center rounded-full">
+                  <img src="/footer_fb.svg" />
+                </div>
+                <div className="footer-icon-items w-[40.82px] h-[40.82px] bg-[#20B15A] flex items-center justify-center rounded-full">
+                  <img src="/footer_twitter.svg" />
+                </div>
+                <div className="footer-icon-items w-[40.82px] h-[40.82px] bg-[#20B15A] flex items-center justify-center rounded-full">
+                  <img src="/footer_in.svg" />
+                </div>
+                <div className="footer-icon-items w-[40.82px] h-[40.82px] bg-[#20B15A] flex items-center justify-center rounded-full">
+                  <img src="/footer_ig.svg" />
+                </div>
+              </div>
+            </div>
+            <div className="col-quick-links">
+              <div className="ql-inner flex flex-col items-center gap-4">
+                <p className="ql-title font-semibold text-[20px] leading-[30px]">
+                  Quick Links
+                </p>
+                <div className="ql-list flex flex-col gap-[25px]">
+                  <div className="ql-items font-medium text-[18px] leading-[24.59px]">
+                    Services
+                  </div>
+                  <div className="ql-items font-medium text-[18px] leading-[24.59px]">
+                    Portfolio
+                  </div>
+                  <div className="ql-items font-medium text-[18px] leading-[24.59px]">
+                    About Us
+                  </div>
+                  <div className="ql-items font-medium text-[18px] leading-[24.59px]">
+                    Contact Us
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="Address">
+              <div className="Address-inner flex flex-col items-center gap-[26px]">
+                <p className="Address-title font-semibold text-[20px] leading-[30px]">
+                  Address
+                </p>
+                <div className="Address-desc">
+                  Design Agency Head Office. Airport Road United Arab Emirate
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="copyright font-medium text-[20px] leading-[27.32px]">
+          Copyright Design Agency 2022
+        </div>
+      </div>
     </div>
   );
 }
